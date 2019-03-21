@@ -1,4 +1,4 @@
-# namesilo-api
+# namesilo-domain-api
 
 - This is a fork from [https://github.com/xaoseric/namesilo-api-node]. I am adding new stuff on top of it. 
 - I am converting all responses from xml to json by [https://github.com/buglabs/node-xml2json] dependency
@@ -7,9 +7,14 @@
 
 
 # Install
-coming soon
+```
+npm install --save namesilo-domain-api
+```
+
 # Embed
-`var NameSilo = require('namesilo-api')`
+```
+var NameSilo = require('namesilo-api')
+```
 
 # Methods
 

@@ -1,12 +1,12 @@
 {
-  "name": "namesilo-api",
-  "version": "0.0.11",
+  "name": "namesilo-domain-api",
+  "version": "0.0.12",
   "description": "library for interacting with NameSilo api",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/7c/namesilo-api"
+    "url": "https://github.com/7c/namesilo-domain-api"
   },
   "keywords": [
     "namesilo",
@@ -15,7 +15,7 @@
     "namesilo api"
   ],
   "dependencies": {
-    "axios": "^0.17.1",    
+    "axios": "^0.17.1",
     "debug": "^4.1.1",
     "glob": "^7.1.2",
     "lodash": "^4.17.4",
