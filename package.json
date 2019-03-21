@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xaoseric/namesilo-api-node.git"
+    "url": "https://github.com/7c/namesilo-api"
   },
   "keywords": [
     "namesilo",
@@ -15,8 +15,7 @@
     "namesilo api"
   ],
   "dependencies": {
-    "axios": "^0.17.1",
-    "bluebird": "^3.5.1",
+    "axios": "^0.17.1",    
     "debug": "^4.1.1",
     "glob": "^7.1.2",
     "lodash": "^4.17.4",
