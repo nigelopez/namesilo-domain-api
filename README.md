@@ -93,7 +93,7 @@ common ones. you might want to check other codes at [https://www.namesilo.com/ap
 ```
 261 : Domain not available to register
 300 : Success
-301 : 301: Successful registration, but not all provided hosts were valid resulting in our nameservers being used
+301 : Successful registration, but not all provided hosts were valid resulting in our nameservers being used
 ```
 
 
