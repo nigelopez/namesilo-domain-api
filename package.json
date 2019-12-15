@@ -1,6 +1,6 @@
 {
   "name": "namesilo-domain-api",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "library for interacting with NameSilo api",
   "main": "index.js",
   "license": "MIT",
@@ -17,8 +17,8 @@
   "dependencies": {
     "axios": "^0.17.1",
     "debug": "^4.1.1",
-    "glob": "^7.1.2",
-    "lodash": "^4.17.4",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.15",
     "xml2json": "^0.11.2"
   }
 }

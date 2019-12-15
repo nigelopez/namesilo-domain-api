@@ -1,5 +1,6 @@
 # namesilo-domain-api
 
+- Original NameSilo API Reference is at [https://www.namesilo.com/api-reference]
 - This is a fork from [https://github.com/xaoseric/namesilo-api-node]. I am adding new stuff on top of it. 
 - I am converting all responses from xml to json by [https://github.com/buglabs/node-xml2json] dependency
 - Converting api methods to be more specific rather than generic, currently they return axios response object
@@ -86,11 +87,44 @@ ns.listDomains().then(res=>{
 })
 ```
 
+## domainInfo(domain) `Promise`
+gives all details about a specific domain
+```
+ns.domainInfo('temp.com').then(res=>{
+    console.log(res)
+}).catch(err=>{
+    console.error(err)
+})
+```
+results:
+```
+{ code: '300',
+  detail: 'success',
+  created: '2017-12-04',
+  expires: '2020-12-04',
+  status: 'Active',
+  locked: 'Yes',
+  private: 'Yes',
+  auto_renew: 'No',
+  traffic_type: 'Custom DNS',
+  email_verification_required: 'No',
+  portfolio: 'My Domains',
+  forward_url: 'N/A',
+  forward_type: 'N/A',
+  nameservers: { nameserver: [ [Object], [Object], [Object], [Object] ] },
+  contact_ids:
+   { registrant: '25112',
+     administrative: '25112',
+     technical: '25112',
+     billing: '25112' } }
+```
 
 
 # Response codes:
 common ones. you might want to check other codes at [https://www.namesilo.com/api_reference.php]
 ```
+110 : Invalid API Key
+200 : Domain is not active, or does not belong to this user
 261 : Domain not available to register
 300 : Success
 301 : Successful registration, but not all provided hosts were valid resulting in our nameservers being used
